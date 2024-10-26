@@ -11,7 +11,10 @@
 
 <body>
     <section class="study-methods-section">
-        <h2 class="timer-display" aria-label="Timer showing 25 minutes">25:00</h2>
+        <div onclick="newTime()" class="timer-display">
+                
+                <p id="countdown">00:00</p>
+        </div>
         <h1 class="method-title">pick a method</h1>
         <div class="methods-container">
           <button class="method-card" tabindex="0">
@@ -25,7 +28,7 @@
           </button>
         </div>
       </section>
-
+      <script src="./countdown.js"></script>
 </body>
 
 
