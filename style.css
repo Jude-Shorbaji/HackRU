@@ -89,3 +89,10 @@
       width:30%
     }
   }
+form {
+  font-family: reross-quadratic, sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: medium;
+  text-align: center;
+}
