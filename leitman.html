@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+
+#Container {
+
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background: lightgrey;
+
+}
+
+#flashAni {
+
+    width: 100px;
+    height: 200 px;
+    position: absolute;
+    background: white;
+
+}
+
+</style>
+<head>
+    <title>
+        Leitman
+    </title>
+</head>
+
+<body>
+
+<!-- prompt for user input-->
+ <h2>Input terms and definitions with a " " between each </h2>
+
+ <input type = "text" id = "text" name = "text">
+
+ <button onClick = "addToCardArray()"> Click when finished </button>
+
+
+
+
+
+
+
+
+    <!-- animation stuff -->
+    <div id = "Container">
+
+        <div id = "flashAni">
+
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+    let allTerms = [];
+    let allDefinitions = [];
+
+    function addToCardArray(){
+
+        let term = document.querySelector("#term");
+        let definition = document.querySelector("#definition");
+
+        allTerms.push(term.value);
+        allDefinitions.push(definition.value);
+    
+
+    }
+
+    function oneCardFlip(){
+    let interval = null;
+    }
+
+
+        
+
+    </script>
+</body>
+</html>
