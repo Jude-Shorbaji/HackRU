@@ -121,26 +121,55 @@ form {
   font-size: medium;
   text-align: center;
 }
-.Concept1 {
-    font-family: reross-quadratic, sans-serif;
+p {
+  font-family: sans-serif;
+  font-style: normal;
+  color:#3f6593;
+  font-weight: 300;
+  font-size: 40px;
+  text-align: center;
+}
+.title {
+  font-family: reross-quadratic, sans-serif;
+  background-color: #ffb7b7;
+  color:#000;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 30px;
+  text-align: center;
+}
+label {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  text-align: center;
+}
+button {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  text-align: center;
+}
+  .Definition {
+    font-family: sans-serif;
     font-style: normal;
-    font-weight: 150;
-    font-size: 30px;
+    font-weight: 300;
+    font-size: 20px;
     text-align: center;
   }
-
-.Concept2 {
-    font-family: reross-quadratic, sans-serif;
+  .Mnemonic {
+    font-family: sans-serif;
     font-style: normal;
-    font-weight: 150;
-    font-size: 30px;
+    font-weight: 300;
+    font-size: 20px;
     text-align: center;
   }
-
-.Concept3 {
-    font-family: reross-quadratic, sans-serif;
+  .smth {
+    font-family: sans-serif;
     font-style: normal;
-    font-weight: 150;
-    font-size: 30px;
+    font-weight: 300;
+    font-size: 20px;
     text-align: center;
   }
