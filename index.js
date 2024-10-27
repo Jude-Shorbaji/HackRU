@@ -50,8 +50,47 @@ document.getElementById("Submit6").onclick = function(){
     document.getElementById("Mnemonic3").value = '';
 }
 
+let mnem1;
+let mnem2;
+let mnem3;
 document.getElementById("testKnowledge").onclick = function(){
-    def3 = document.getElementById("Mnemonic3").value;
-    definition.push(def3);
-    document.getElementById("Mnemonic3").value = '';
+    mnem1 = definition[0];
+    mnem2 = definition[1];
+    mnem3 = definition[2];
+    document.getElementById("mnem1").textContent = `What concept does this mnemonic resemble?: ${mnem1}`;
+    document.getElementById("mnem2").textContent = `What concept does this mnemonic resemble?: ${mnem2}`;
+    document.getElementById("mnem3").textContent = `What concept does this mnemonic resemble?: ${mnem3}`;
+}
+
+let ans1;
+document.getElementById("ansSubmit1").onclick = function(){
+    ans1 = document.getElementById("Answer1").value;
+    if (ans1 === terms[0]) {
+        document.getElementById("msg1").textContent = `Correct!`
+    } else {
+        document.getElementById("msg1").textContent = `Wrong!`
+    }
+    document.getElementById("ansSubmit1").value = '';
+}
+
+let ans2;
+document.getElementById("ansSubmit2").onclick = function(){
+    ans2 = document.getElementById("Answer2").value;
+    if (ans2 === terms[1]) {
+        document.getElementById("msg2").textContent = `Correct!`
+    } else {
+        document.getElementById("msg2").textContent = `Wrong!`
+    }
+    document.getElementById("ansSubmit2").value = '';
+}
+
+let ans3;
+document.getElementById("ansSubmit3").onclick = function(){
+    ans3 = document.getElementById("Answer3").value;
+    if (ans3 === terms[2]) {
+        document.getElementById("msg3").textContent = `Correct!`
+    } else {
+        document.getElementById("msg3").textContent = `Wrong!`
+    }
+    document.getElementById("ansSubmit3").value = '';
 }
