@@ -3,6 +3,10 @@
 
 <style>
 
+
+
+
+
 /*
 Container is a css tag for the grey background of the flashcards
 */
@@ -43,14 +47,16 @@ flashcard is a css tag for the moving flashcard component (it is animated)
  <h3>definition</h3>
 
  <!--text boxes for term and definition-->
- <input type = "text" id = "term" name = "term">
- <input type = "text" id = "definition" name = "definition">
 
+    <input type = "text" id = "term" name = "term">
+    <input type = "text" id = "definition" name = "definition">
+
+ 
 
  <!-- the buttons call a function when pressed-->
 
  <!--press each time a term and definition pair is done-->
- <button onClick = "addToCardArray()"> Click to submit term </button>
+ <button onClick = "addToCardArrayMain()"> Click to submit term </button>
 
  <!-- starts going through all the flashcards-->
  <button onClick -= "flashCardTime()"> Click to practice set</button>
@@ -77,18 +83,32 @@ flashcard is a css tag for the moving flashcard component (it is animated)
     let allTerms = [];
     let allDefinitions = [];
 
+
+    function addToCardArrayMain(){
+        addToCardArray();
+        resetInput();
+    }
     // each time button is pressed, it called this to add the term and definition to the array
     function addToCardArray(){
 
         let term = document.querySelector("#term");
         let definition = document.querySelector("#definition");
 
+        //appends most recent term to end of array
         allTerms.push(term.value);
         allDefinitions.push(definition.value);
-    
+
+        console.log(allTerms);
+        console.log(allDefinitions);
 
     }
 
+    function resetInput(){
+
+        document.getElementById("#term").reset();
+        document.getElementById("#definition").reset();
+
+    }
 
     // this starts the flashcard review session
     function flashCardTime(allTerms, allDefinitions){
