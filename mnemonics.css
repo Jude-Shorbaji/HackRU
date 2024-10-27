@@ -1,102 +1,34 @@
-.concept-container {
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    align-items: center;
-    padding: 71px 80px 0;
-  }
-  
-  .content-wrapper {
-    display: flex;
-    width: 100%;
-    max-width: 1577px;
-    flex-direction: column;
-  }
-  
-  .concepts-grid {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .concept-column {
-    display: flex;
-    flex-direction: column;
-    line-height: normal;
-    width: 33%;
-  }
-  
-  .concept-input {
-    border-radius: 50px;
-    background-color: #d9d9d9;
-    flex-grow: 1;
-    color: #000;
-    width: 100%;
-    padding: 10px;
-    font: 400 24px Inter, sans-serif;
-  }
-  
-  .thought-input {
-    border-radius: 50px;
-    background-color: #f5f5f5;
-    margin-top: 19px;
-    color: #000;
-    padding: 31px 62px;
-    font: 400 24px Inter, sans-serif;
-  }
-  
-  .review-button {
-    background-color: #d9d9d9;
-    align-self: center;
-    margin-top: 24px;
-    width: 263px;
-    padding: 20px 63px;
-    font: 400 24px Inter, sans-serif;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
-  }
-  
-  @media (max-width: 991px) {
-    .concept-container {
-      padding: 0 20px;
-    }
-    
-    .content-wrapper {
-      max-width: 100%;
-    }
-    
-    .concepts-grid {
-      flex-direction: column;
-      align-items: stretch;
-      gap: 0;
-    }
-    
-    .concept-column {
-      width: 100%;
-      margin: 20px 0;
-    }
-    
-    .concept-input {
-      max-width: 100%;
-      padding: 20px;
-    }
-    
-    .thought-input {
-      max-width: 100%;
-      padding: 20px;
-    }
-    .review-button {
-        padding: 20px;
-      }
-    }
+
+.conceptInput{
+  display: flex;
+  margin-top:100px;
+  margin-left: 80px;
+  margin-right:80px;
+}
+.input{
+  display: flex;
+  flex-direction: column;
+  background-color: lightgrey;
+  padding: 20px;
+  border-radius: 50px;
+  margin:100px;
+  align-items: center;
+}
+
+label{
+  font-family: reross-quadratic, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+h1{
+  font-family: reross-quadratic, sans-serif;
+  font-style: normal;
+  font-weight: 200;
+}
+h3{
+  font-family: reross-quadratic, sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  color:black;
+  text-align: center;
+}

@@ -114,65 +114,7 @@
       width:30%
     }
   }
-form {
-  font-family: reross-quadratic, sans-serif;
-  font-style: normal;
-  font-weight: 200;
-  font-size: medium;
-  text-align: center;
-}
-p {
-  font-family: sans-serif;
-  font-style: normal;
-  color:#3f6593;
-  font-weight: 300;
-  font-size: 40px;
-  text-align: center;
-}
-.title {
-  font-family: reross-quadratic, sans-serif;
-  background-color: #ffb7b7;
-  color:#000;
-  font-style: normal;
-  font-weight: 200;
-  font-size: 30px;
-  text-align: center;
-}
-label {
-  font-family: sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 20px;
-  text-align: center;
-}
-button {
-  font-family: sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 15px;
-  text-align: center;
-}
-  .Definition {
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    text-align: center;
-  }
-  .Mnemonic {
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    text-align: center;
-  }
-  .smth {
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    text-align: center;
-  }
+
   p{
     font-size:20px;
     text-align: left;
