@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
     <title>Feynman Technique</title>
+    <link rel="stylesheet" href="feynman.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/fiq6thy.css">
 </head>
@@ -9,9 +10,20 @@
                 
         <p id="countdown">00:00</p>
     </div>
-    <div>
-        <button id="speechBubble" onclick="conversation()">Hi!</button>
-    </div>
+    <br><br><br><br><br><br><br><br>
+
+    <section class="chat-container" role="log" aria-label="Chat messages">
+        <h2 id="speechBubble" class="message-bubble message-incoming">
+        Hi, are you ready to review?
+        <br>
+        (type to chat)
+        </h2>
+        <form id="chat" onsubmit="conversation()">
+            <p></p>
+            <input type="text" class="message-bubble message-outgoing" >
+         </form>
+      
+      </section>
     
     <script src="./countdown.js"></script>
     <script src="./feynman.js"></script>
