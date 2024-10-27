@@ -173,3 +173,8 @@ button {
     font-size: 20px;
     text-align: center;
   }
+  p{
+    font-size:20px;
+    text-align: left;
+    color:black;
+  }
