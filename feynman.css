@@ -14,22 +14,23 @@
   
   .message-incoming {
     background-color: #eee;
-    padding: 66;
+    padding: 80px;
     font-family: reross-quadratic, sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size:50px;
+    font-size:40px;
     margin:20px;
   }
   
   .message-outgoing {
     background-color: #fbfbfb;
-    padding: 66px;
+    padding: 30px;
     font-family: reross-quadratic, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size:50px;
     margin:20px;
+    width:100%;
   }
   
   @media (max-width: 991px) {
