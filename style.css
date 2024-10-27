@@ -96,3 +96,26 @@ form {
   font-size: medium;
   text-align: center;
 }
+.Concept1 {
+    font-family: reross-quadratic, sans-serif;
+    font-style: normal;
+    font-weight: 150;
+    font-size: 30px;
+    text-align: center;
+  }
+
+.Concept2 {
+    font-family: reross-quadratic, sans-serif;
+    font-style: normal;
+    font-weight: 150;
+    font-size: 30px;
+    text-align: center;
+  }
+
+.Concept3 {
+    font-family: reross-quadratic, sans-serif;
+    font-style: normal;
+    font-weight: 150;
+    font-size: 30px;
+    text-align: center;
+  }
