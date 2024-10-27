@@ -13,17 +13,14 @@
     <br><br><br><br><br><br><br><br>
 
     <section class="chat-container" role="log" aria-label="Chat messages">
-        <h2 id="speechBubble" class="message-bubble message-incoming">
-        Hi, are you ready to review?
-        <br>
-        (type to chat)
-        </h2>
+        <input id="speechBubble" class="message-bubble message-incoming" value="input term here">
         <form id="chat" onsubmit="conversation()">
-            <p></p>
-            <input type="text" class="message-bubble message-outgoing" >
+            <input type="text" class="message-bubble message-outgoing" value="personal definition">
          </form>
       
       </section>
+      <h3>The Feyman Techniqueis a learning method that helps students understand and retain information by defining important topics in their own words.<br> 
+    review for your test/exam by inputing a topic on the left and then defining it on the right.</h3>
     
     <script src="./countdown.js"></script>
     <script src="./feynman.js"></script>
