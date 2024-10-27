@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+
+
+
+
+
+/*
+Container is a css tag for the grey background of the flashcards
+*/
+#container {
+
+    width: 1000px;
+    height: 500px;
+    position: relative;
+    background: lightgrey;
+
+}
+/*
+flashcard is a css tag for the moving flashcard component (it is animated)
+*/
+#flashcard {
+
+    width: 100px;
+    height: 200 px;
+    position: absolute;
+    background: white;
+
+}
+
+</style>
+<head>
+    <title>
+        Leitman
+    </title>
+</head>
+
+<body>
+
+<h1>Leitman Flashcard Method</h1>
+<h2> blurb about this method</h2>
+
+<!-- prompt for user input-->
+ <h3>term</h3>
+ <h3>definition</h3>
+
+ <!--text boxes for term and definition-->
+
+    <input type = "text" id = "term" name = "term">
+    <input type = "text" id = "definition" name = "definition">
+
+ 
+
+ <!-- the buttons call a function when pressed-->
+
+ <!--press each time a term and definition pair is done-->
+ <button onClick = "addToCardArrayMain()"> Click to submit term </button>
+
+ <!-- starts going through all the flashcards-->
+ <button onClick -= "flashCardTime()"> Click to practice set</button>
+
+
+    <br><br><br>    
+
+    <!-- animated flashcards location -->
+
+    <div id = "container">
+
+        <div id = "flashcard">
+
+
+        </div>
+
+    </div>
+
+
+
+    <script>
+
+    // arrays that hold all terms and definitions respectively
+    let allTerms = [];
+    let allDefinitions = [];
+
+
+    function addToCardArrayMain(){
+        addToCardArray();
+        resetInput();
+    }
+    // each time button is pressed, it called this to add the term and definition to the array
+    function addToCardArray(){
+
+        let term = document.querySelector("#term");
+        let definition = document.querySelector("#definition");
+
+        //appends most recent term to end of array
+        allTerms.push(term.value);
+        allDefinitions.push(definition.value);
+
+        console.log(allTerms);
+        console.log(allDefinitions);
+
+    }
+
+    function resetInput(){
+
+        document.getElementById("#term").reset();
+        document.getElementById("#definition").reset();
+
+    }
+
+    // this starts the flashcard review session
+    function flashCardTime(allTerms, allDefinitions){
+
+        const ctx = document.getElementById("canvas").getContext("2d");
+        ctx.font = "40px Arial";
+        ctx.textAlign  = "center";
+
+        for (let i = 0; i < allTerms.length; i++){
+
+            ctx.fillText(allTerms[i]);
+
+            
+
+        }   
+
+
+    }
+
+    // this codes the animation of a card flipping 
+    function oneCardFlip(){
+    let interval = null;
+    }
+
+
+        
+
+    </script>
+</body>
