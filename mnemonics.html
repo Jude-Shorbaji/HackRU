@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Home Page
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/fiq6thy.css">
+    <script src="mainPage.js"></script>
+</head>
+
+<body>
+    <p class="title">
+        Welcome to the Mnemonics Technique!
+    </p>
+
+    <label>Concept 1: </label>
+    <input id="Input1">
+    <button id="Submit1">Submit</button><br><br>
+    
+
+    <label>Concept 2: </label>
+    <input id="Input2">
+    <button id="Submit2">Submit</button><br><br>
+
+    <label>Concept 3: </label>
+    <input id="Input3">
+    <button id="Submit3">Submit</button><br><br>
+
+    <section class="Definition" id="Definition">
+        Today we will study using the mnemonics technique! But you may be asking yourself,
+        what is a mnemonic?
+        <br>
+        A mnemonic device is a technique that helps you remember information by making a connection or association
+        between the concept and something else.
+        <br><br>
+        Some common mnemonic devices include images, acronyms, or rhymes!
+        <br><br>
+        Let's start with your study concepts!<br><br>
+        <hr>
+
+        What comes to mind when you think of: <p id="concept1"></p>
+        
+
+        <section class="Mnemonic">
+            <label>Enter your mnemonic (include description if image): </label>
+            <input id="Mnemonic1" size="100">
+            <button id="Submit4">Submit</button><br><br>
+            <br>
+        </section><br>
+
+        <hr>
+        What comes to mind when you think of: <p id="concept2"></p>
+        
+
+        <section class="Mnemonic"></section>
+            <label>Enter your mnemonic (include description if image): </label>
+            <input id="Mnemonic2" size="100">
+            <button id="Submit5">Submit</button><br><br>
+            <br>
+        </section><br>
+        
+
+        <hr>
+    </section>
+
+    <section class="smth">
+        What comes to mind when you think of: <p id="concept3"></p>
+
+        <label>Enter your mnemonic (include description if image): </label>
+        <input id="Mnemonic3" size="100">
+        <button id="Submit6">Submit</button><br><br>
+        <br><br>
+
+    </section>
+
+    <style>
+        .center {
+            margin: 0;
+            position: absolute;
+            left: 50%;
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+        }
+    </style>
+
+    <div class="center">
+        <button id="testKnowledge">Ready to test your knowledge?</button><br><br>
+    </div>
+    <br><br><br><br>
+    <h6 id="mnem1"></h6>
+    <h6 id="mnem2"></h6>
+    <h6 id="mnem3"></h6>
+
+    
+    <script src="mainPage.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+.chat-container {
+    background-color: #fff;
+    align-items: center;
+    display: flex;
+    color: #000;
+    font: 400 36px 'Julius Sans One', sans-serif;
+  }
+  
+  .message-bubble {
+    border-radius: 50px;
+    width: 100%;
+    max-width: 536px;
+  }
+  
+  .message-incoming {
+    background-color: #eee;
+    padding: 80px;
+    font-family: reross-quadratic, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size:40px;
+    margin:20px;
+  }
+  
+  .message-outgoing {
+    background-color: #fbfbfb;
+    padding: 30px;
+    font-family: reross-quadratic, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size:50px;
+    margin:20px;
+    width:100%;
+  }
+  
+  @media (max-width: 991px) {
+    .chat-container {
+      padding: 100px 20px;
+    }
+  
+    .message-incoming,
+    .message-outgoing {
+    padding: 0 20px 110px;
+    }
+  }

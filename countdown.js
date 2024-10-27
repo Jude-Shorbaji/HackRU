@@ -1,4 +1,4 @@
-const startingMinutes =0;
+const startingMinutes =25;
 let time=startingMinutes*60;
 const countdownEL= document.getElementById('countdown');
 
@@ -13,3 +13,6 @@ function updateCountdown(){
     time = time < 0 ? 0 : time; 
 }
 
+function newTime(){
+    time=window.prompt("How many minutes will you study for?","enter number")*60;
+}
