@@ -5,9 +5,15 @@
     <title>
         Home Page
     </title>
-    <link rel="stylesheet" href="mnemonics.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/fiq6thy.css">
-
+    <style>
+        .accuracy {
+            color: white;
+            padding: 3px;
+        }
+        
+    </style>
 </head>
 
 <body>
@@ -28,35 +34,6 @@
     <button id="Submit3">Submit</button><br><br>
 
     <section class="Definition" id="Definition">
-=======
-    <section class="concept-container">
-        
-        <div class="concepts-grid">
-            <div class="concept-column">
-                <div class="concept-input">
-                    <label>Concept 1: </label>
-                    <input id="Input1"  >
-                    <button id="Submit1">Submit</button><br><br>
-                </div>
-            </div>
-    
-            <div class="concept-column">
-                <div class="concept-input">
-                <label >Concept 2: </label>
-                <input id="Input2">
-                <button id="Submit2">Submit</button><br><br>
-                </div>
-            </div>
-            <div class="concept-column">
-                <div class="concept-input">
-                 <label>Concept 3: </label>
-                 <input id="Input3">
-                 <button id="Submit3">Submit</button><br><br>
-                 </div>
-            </div>
-        </div>
-        <section class="Definition" id="Definition">
-
         Today we will study using the mnemonics technique! But you may be asking yourself,
         what is a mnemonic?
         <br>
@@ -68,7 +45,7 @@
         Let's start with your study concepts!<br><br>
         <hr>
 
-        What comes to mind when you think of: <p id="concept1"></p>
+        What comes to mind when you think of: <p id="concept1"><br></p>
         
 
         <section class="Mnemonic">
@@ -79,7 +56,7 @@
         </section><br>
 
         <hr>
-        What comes to mind when you think of: <p id="concept2"></p>
+        What comes to mind when you think of: <p id="concept2"><br></p>
         
 
         <section class="Mnemonic"></section>
@@ -91,16 +68,17 @@
         
 
         <hr>
+    </section>
 
     <section class="smth">
-        What comes to mind when you think of: <p id="concept3"></p>
+        What comes to mind when you think of: <p id="concept3"><br></p>
 
         <label>Enter your mnemonic (include description if image): </label>
         <input id="Mnemonic3" size="100">
         <button id="Submit6">Submit</button><br><br>
         <br><br>
+
     </section>
-</section>
 
     <style>
         .center {
@@ -120,7 +98,8 @@
     <h6 class="smth" id="mnem1"></h6>
     <input id="Answer1" class="center"><br><br>
     <button id="ansSubmit1" class="center">Submit</button><br><br>
-    <h6 class="smth" id="msg1"></h6>
+    <h6 class="correct" id="msg1A"></h6>
+    <h6 class="wrong" id="msg1B"></h6>
     <hr><br><br>
     
     
@@ -128,7 +107,8 @@
     <h6 class="smth" id="mnem2"></h6>
     <input id="Answer2" class="center"><br><br>
     <button id="ansSubmit2" class="center">Submit</button><br><br>
-    <h6 class="smth" id="msg2"></h6>
+    <h6 class="correct" id="msg2A"></h6>
+    <h6 class="wrong" id="msg2B"></h6>
     <hr><br><br>
     
     
@@ -136,7 +116,8 @@
     <h6 class="smth" id="mnem3"></h6>
     <input id="Answer3" class="center"><br><br>
     <button id="ansSubmit3" class="center">Submit</button><br><br>
-    <h6 class="smth" id="msg3"></h6>
+    <h6 class="correct" id="msg3A"></h6>
+    <h6 class="wrong" id="msg3B"></h6>
     
     <script src="index.js"></script>
 
