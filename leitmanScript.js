@@ -60,17 +60,13 @@
      alert("you have 45 seconds to answer:");
      setTimeout(quizMe, 20000);
 
-    
-
+     allDefinitions[5] = document.querySelector("#definition1");
+     allDefinitions[6]= document.querySelector("#definition2");
+     allDefinitions[7] = document.querySelector("#definition3");
+     allDefinitions[8] = document.querySelector("#definition4");
+     allDefinitions[9] = document.querySelector("#definition5");
      for (i = 5; i < 10; i++){
-        // add to array
-        for (i = 0; i <5; i++){
-            let definition1 = document.querySelector("#definition1");
-            let definition2 = document.querySelector("#definition2");
-            let definition3 = document.querySelector("#definition3");
-            let definition4 = document.querySelector("#definition4");
-            let definition5 = document.querySelector("#definition5");
-        }
+        
         if (allDefinitions[i] == allDefinitions(i-5)){
              score = score + 1;
          }
