@@ -66,9 +66,9 @@ let ans1;
 document.getElementById("ansSubmit1").onclick = function(){
     ans1 = document.getElementById("Answer1").value;
     if (ans1 === terms[0]) {
-        document.getElementById("msg1").textContent = `Correct!`
+        document.getElementById("msg1A").textContent = `Correct!`
     } else {
-        document.getElementById("msg1").textContent = `Wrong!`
+        document.getElementById("msg1B").textContent = `Wrong!`
     }
     document.getElementById("ansSubmit1").value = '';
 }
@@ -77,9 +77,9 @@ let ans2;
 document.getElementById("ansSubmit2").onclick = function(){
     ans2 = document.getElementById("Answer2").value;
     if (ans2 === terms[1]) {
-        document.getElementById("msg2").textContent = `Correct!`
+        document.getElementById("msg2A").textContent = `Correct!`
     } else {
-        document.getElementById("msg2").textContent = `Wrong!`
+        document.getElementById("msg2B").textContent = `Wrong!`
     }
     document.getElementById("ansSubmit2").value = '';
 }
@@ -88,9 +88,9 @@ let ans3;
 document.getElementById("ansSubmit3").onclick = function(){
     ans3 = document.getElementById("Answer3").value;
     if (ans3 === terms[2]) {
-        document.getElementById("msg3").textContent = `Correct!`
+        document.getElementById("msg3A").textContent = `Correct!`
     } else {
-        document.getElementById("msg3").textContent = `Wrong!`
+        document.getElementById("msg3B").textContent = `Wrong!`
     }
     document.getElementById("ansSubmit3").value = '';
 }
